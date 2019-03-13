@@ -1,3 +1,3 @@
-[submodule "subModulesCommon"]
-	path = subModulesCommon
+[submodule "src/subModulesCommon"]
+	path = src/subModulesCommon
 	url = https://github.com/stephaneHillerCGI/subModulesCommon.git
