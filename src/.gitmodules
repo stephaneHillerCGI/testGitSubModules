@@ -1,0 +1,3 @@
+[submodule "subModulesCommon"]
+	path = subModulesCommon
+	url = https://github.com/stephaneHillerCGI/subModulesCommon.git

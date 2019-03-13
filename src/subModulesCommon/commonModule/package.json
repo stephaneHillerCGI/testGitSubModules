@@ -1,16 +1,22 @@
 {
-  "name": "testGitSubModules",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
-  "private": true,
+  "name": "ionic-module-common",
+  "version": "0.0.12",
+  "description": "",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": "dist",
   "scripts": {
-    "clean": "ionic-app-scripts clean",
-    "build": "ionic-app-scripts build",
-    "lint": "ionic-app-scripts lint",
-    "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ngc": "ngc",
+    "build": "rm -rf aot dist && npm run ngc",
+    "publishPackage": "npm run build && npm publish"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephaneHillerCGI/ionicCommonModule.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
     "@angular/common": "5.0.0",
     "@angular/compiler": "5.0.0",
@@ -32,8 +38,6 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.0",
-    "typescript": "2.4.2",
-    "ws": "3.3.2"
-  },
-  "description": "An Ionic project"
+    "typescript": "2.4.2"
+  }
 }
